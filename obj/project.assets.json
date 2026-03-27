@@ -45,19 +45,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BSIT-2A\\.nuget\\packages\\": {}
+    "C:\\Users\\alard\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BSIT-2A\\Documents\\lyra\\bersales\\Lyra\\Lyra.csproj",
+      "projectUniqueName": "C:\\Users\\alard\\Documents\\BSIT\\PortFolio\\Lyra.csproj",
       "projectName": "Lyra",
-      "projectPath": "C:\\Users\\BSIT-2A\\Documents\\lyra\\bersales\\Lyra\\Lyra.csproj",
-      "packagesPath": "C:\\Users\\BSIT-2A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BSIT-2A\\Documents\\lyra\\bersales\\Lyra\\obj\\",
+      "projectPath": "C:\\Users\\alard\\Documents\\BSIT\\PortFolio\\Lyra.csproj",
+      "packagesPath": "C:\\Users\\alard\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alard\\Documents\\BSIT\\PortFolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BSIT-2A\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alard\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

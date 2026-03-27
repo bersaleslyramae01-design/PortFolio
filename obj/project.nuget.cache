@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "h5YaWFntLnA=",
+  "dgSpecHash": "hQieK8ZHkBI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BSIT-2A\\Documents\\lyra\\bersales\\Lyra\\Lyra.csproj",
+  "projectFilePath": "C:\\Users\\alard\\Documents\\BSIT\\PortFolio\\Lyra.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BSIT-2A\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512"
+    "C:\\Users\\alard\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512"
   ],
   "logs": []
 }
