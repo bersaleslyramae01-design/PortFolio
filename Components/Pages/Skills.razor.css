@@ -1,66 +1,132 @@
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .skill-item {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
+    background: rgba(26, 26, 46, 0.8);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(0, 255, 0, 0.1);
     text-align: center;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-}
-
-.skill-item i {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.skill-item h3 {
-    margin: 10px 0;
-    color: white;
-}
-
-.progress-container {
-    margin-top: 15px;
-}
-
-.progress-bar {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    height: 20px;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out both;
+    animation-delay: calc(var(--i, 0) * 0.1s);
     position: relative;
     overflow: hidden;
 }
 
-.progress-fill {
-    background: linear-gradient(90deg, #007bff, #00d4ff);
+.skill-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
     height: 100%;
-    border-radius: 10px;
-    transition: width 0.5s ease;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.skill-item:hover::before {
+    left: 100%;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(0, 255, 0, 0.2);
+    border-color: rgba(0, 255, 0, 0.5);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: #00ff00;
+    margin-bottom: 1rem;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover i {
+    color: #00ffff;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+    transform: scale(1.1);
+}
+
+.skill-item h3 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.progress-container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 25px;
+    height: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #00ff00, #00ffff);
+    position: relative;
+    transition: width 1.5s ease-out;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent);
 }
 
 .progress-text {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-shadow: 0 0 8px rgba(0, 112, 192, 0.8);
+    z-index: 10;
+    white-space: nowrap;
 }
 
-.progress-bar:hover .progress-text {
-    opacity: 1;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
