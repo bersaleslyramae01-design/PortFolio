@@ -1,0 +1,7 @@
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\Lyra.exe
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\appsettings.Development.json
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\appsettings.json
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\Lyra.dll
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\Lyra.runtimeconfig.json
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\Lyra.pdb
+C:\Users\alard\OneDrive\Documents\BSIT\ASP\PortFolio\publish\Lyra.deps.json
